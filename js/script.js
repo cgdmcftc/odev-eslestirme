@@ -72,7 +72,10 @@ function kartTiklama(olay) {
         //İki açık kart arasında eşleşme var.
         acikKart.classList.add("eslesti");
         secilenKart.classList.add("eslesti");
-
+        
+        document.getElementById("puan").innerText = "Eşleşen kart sayısı:" + sonuc;
+        sonuc++;
+        
         acikKart.classList.remove("acik");
         secilenKart.classList.remove("acik");
 
